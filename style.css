@@ -1,0 +1,139 @@
+body {
+   
+    background-blend-mode: ;
+    color: #444;
+    font-family: "Segoe UI", sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    margin: 0 0 15px 0;
+    padding: 0;
+    font-family: "Segoe UI", sans-serif;
+    font-weight:700;
+  }
+  /*--------------------------------------------------------------
+  # Weather Card
+  --------------------------------------------------------------*/
+  .weather__card {
+    width: 800px;
+    padding: 40px 30px;
+    background-color: #a4c9ca;
+    border-radius: 20px;
+    color:#3C4048;
+  display: none;
+  }
+  .weather__card h2 {
+    font-size:120px;
+    font-weight:700;
+    color:#3C4048;
+    line-height: .8;
+  }
+  .weather__card h3 {
+    font-size: 40px;
+    font-weight: 600;
+    line-height: .8;
+    color:#3C4048;
+  }
+  .weather__card h5 {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: .1;
+    color:#9D9D9D;
+  }
+  .weather__card img {
+    width: 120px;
+    height: 120px;
+  }
+  .weather__card .weather__description {
+    background-color: #fff;
+    border-radius: 25px;
+    padding: 5px 13px;
+    border:0;
+    outline: none;
+    color:#7F8487;
+    font-size: .956rem;
+    font-weight: 400;
+  }
+  /*--------------------------------------------------------------
+  # Weather Status
+  --------------------------------------------------------------*/
+  .weather__status img {
+    height: 20px;
+    width: 20px;
+    vertical-align:middle;
+  }
+  .weather__status span {
+    font-weight: 500;
+    color: #3C4048;
+    font-size: .9rem;
+    padding-left: .5rem;
+  }
+  /*--------------------------------------------------------------
+  # Weather Forecast
+  --------------------------------------------------------------*/
+  .weather__forecast img {
+    height: 25px;
+    width: 25px;
+    vertical-align:middle;
+  }
+  .weather__forecast span {
+    font-weight: 500;
+    color: #3C4048;
+    font-size: 1rem;
+    padding: 5px 10px;
+  }
+
+  .weather__card.active {
+    display: block; /* Show the weather card when it has the 'active' class */
+}
+
+  html {
+    font-size: 62.5%;
+}
+
+.search-container {
+    background: linear-gradient(to right, #ff7e5f, #feb47b);
+    border-radius: 25px;
+    padding: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.search__box {
+    border: none;
+    outline: none;
+    border-radius: 25px;
+    padding: 10px 15px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.search__icon {
+    /* margin-left: 10px; */
+    cursor: pointer;
+    position: relative;
+    top: 12px;
+    right: 20px;
+}
+
+.search__box::placeholder {
+    color: #999;
+}
+
+    #div {
+        background-image: url('./bg.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 100vh;
+        
+    }
+
+#div::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(255, 255, 255, 0.5); /* White overlay with 50% opacity */
+    z-index: 0;
+}
